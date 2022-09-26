@@ -1,0 +1,179 @@
+body {
+  color: #555555;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.theme-clr {
+  color: #3635ff;
+}
+
+.theme-bg {
+  background: #3635ff;
+}
+
+.icon-text {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 8px 8px 8px 0;
+  font-weight: 400;
+  color: #fff;
+}
+
+.icon-text .fa::before {
+  font-size: 12px;
+}
+
+.logo {
+  width: 350px;
+}
+
+.hero-section {
+  height: 650px;
+  position: relative;
+  background: url(../img/hero-1.jpg) no-repeat center center/cover;
+}
+
+.hero-section::after {
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 120px 100px 250px #000, inset -120px -100px 250px #000;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.hero-contetnt {
+  width: 100%;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-contetnt p {
+  font-size: 1.875rem;
+}
+
+.title {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  padding-top: 25px;
+  position: relative;
+}
+
+.title:before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 0px;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background-color: #3635ff;
+}
+
+.section-services {
+  background: #f1f1f1;
+}
+
+.service-box h4 {
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-box {
+  height: 100%;
+}
+
+.service-box img {
+  transition: all 0.3s ease;
+}
+
+.service-box:hover img {
+  opacity: 0.8;
+}
+
+.contact-detail {
+  padding: 50px 35px 45px;
+  background-color: #df6512;
+  -webkit-box-shadow: 0px 0px 45px rgb(0 0 0 / 20%);
+  -ms-box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 45px rgb(0 0 0 / 20%);
+}
+
+.sub-title {
+  color: #000;
+  line-height: 1.5;
+}
+
+.contact-detail h3 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+
+.contact-detail p {
+  margin-top: 8px;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.contact-detail span {
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.contact-detail strong {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.contact-detail i {
+  font-size: 2rem;
+  line-height: 1em;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logo {
+    width: 250px;
+  }
+
+  .hero-section {
+    height: 480px;
+  }
+
+  .hero-contetnt p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  .title {
+    font-size: 1.25rem;
+    line-height: 1.7;
+  }
+
+  main {
+    overflow-x: hidden;
+  }
+  iframe.h-100 {
+    height: 450px !important;
+  }
+}
